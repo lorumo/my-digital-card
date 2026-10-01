@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Hulyk | Data Engineering Intern</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 480px;
+            width: 100%;
+            padding: 48px 40px;
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            margin: 0 auto 24px;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .headline {
+            font-size: 18px;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .phrase {
+            font-size: 20px;
+            font-style: italic;
+            color: #4a4a6a;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .about {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 32px;
+            padding: 0 8px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-linkedin {
+            background: #0077b5;
+            color: white;
+        }
+
+        .btn-linkedin:hover {
+            background: #005885;
+        }
+
+        .btn-github {
+            background: #333;
+            color: white;
+        }
+
+        .btn-github:hover {
+            background: #000;
+        }
+
+        .btn-contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-contact:hover {
+            background: linear-gradient(135deg, #5568d3 0%, #653a8f 100%);
+        }
+
+        .footer {
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .buttons {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .btn {
+                flex: 1;
+                max-width: 140px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 32px 24px;
+            }
+
+            .name {
+                font-size: 28px;
+            }
+
+            .headline {
+                font-size: 16px;
+            }
+
+            .phrase {
+                font-size: 18px;
+            }
+
+            .about {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="profile.jpg" alt="Roman Hulyk" class="profile-photo">
+        
+        <h1 class="name">Roman Hulyk</h1>
+        <p class="headline">Data Engineering Intern</p>
+        
+        <p class="phrase">"Transforming data into actionable insights"</p>
+        
+        <p class="about">
+            I'm a Data Science in Economics student and Data Engineering Intern with a deep passion for transforming raw data into actionable insights. I love exploring the intersection of economics and data science to solve real-world problems.
+        </p>
+        
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/roman-hulyk-a1079a311/?isSelfProfile=true" target="_blank" class="btn btn-linkedin">
+                LinkedIn
+            </a>
+            <a href="https://github.com/lorumo" target="_blank" class="btn btn-github">
+                GitHub
+            </a>
+            <a href="mailto:hulykroma@gmail.com" class="btn btn-contact">
+                Contact Me
+            </a>
+        </div>
+        
+        <div class="footer">
+            Built with AI • Deployed with GitHub Pages
+        </div>
+    </div>
+</body>
+</html>
